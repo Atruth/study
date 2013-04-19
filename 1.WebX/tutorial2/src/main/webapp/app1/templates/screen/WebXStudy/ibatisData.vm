@@ -1,0 +1,17 @@
+<h1>Product List</h1>
+<ul>
+<table border="1">
+	#foreach ($itemResultTO in $list)
+		<tr>
+    		<td>$!itemResultTO.getJuId()</td>
+    		<td>$!itemResultTO.getPicUrl()</td>
+    		<td>$!itemResultTO.getTitle()</td>
+    		<td>$!itemResultTO.getPrice()</td>
+    		<td>$!itemResultTO.getActivityPrice()</td>
+    		<td>$!itemResultTO.getGmtCreate()</td>
+    		<td>$!itemResultTO.getEmail()</td>
+    		<td>$!itemResultTO.getWangwang()</td>
+    	</tr>
+  	#end
+</table>
+</ul>

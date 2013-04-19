@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="SimpltDAO">
+	<typeAlias alias="ItemResultTO" type="com.alibaba.biz.structure.to.ItemResultTO" />
+	<typeAlias alias="SellerTO" type="com.alibaba.biz.structure.to.SellerTO" />
+	<resultMap id="ItemResult" class="ItemResultTO">
+		<result property="title" column="long_name" />
+		<result property="picUrl" column="pic_url" />
+		<result property="activityPrice" column="activity_price" />
+		<result property="price" column="original_price" />
+		<result property="gmtCreate" column="gmt_create" />
+		<result property="juId" column="ju_id" />
+		<result property="email" column="email" />
+		<result property="wangwang" column="wangwang" />
+		<!-- <result property="sellerTOs" javaType="List" column="seller_id" -->
+		<!-- select="SimpltDAO.querySeller" /> -->
+	</resultMap>
+
+	<resultMap id="SellerResult" class="SellerTO">
+		<result property="sellerId" column="seller_id" />
+		<result property="email" column="email" />
+		<result property="wangwang" column="wangwang" />
+	</resultMap>
+
+	<sql id="selectSellerColum">
+		select
+		seller_id,email,wangwang
+		from seller
+	</sql>
+
+	<select id="querySeller" parameterClass="Long" resultClass="SellerTO">
+		<include refid="selectSellerColum" />
+		where is_deleted = 0 and seller_id=#sellerId#
+	</select>
+
+	<sql id="selectItemColum">
+		select
+		long_name,pic_url,activity_price,original_price,gmt_create,ju_id,seller_id
+		from
+		item
+	</sql>
+
+	<select id="queryItem" resultMap="ItemResult">
+		<include refid="selectItemColum" />
+		where is_deleted = 0 limit 50
+	</select>
+
+	<select id="queryComInfor" resultMap="ItemResult">
+		select
+		a.long_name,a.pic_url,a.activity_price,a.original_price,a.gmt_create,a.ju_id,b.email,b.wangwang
+		from
+		item a,seller b where a.seller_id = b.seller_id and a.is_deleted =
+		0 and b.is_deleted = 0 limit 50
+	</select>
+
+</sqlMap>

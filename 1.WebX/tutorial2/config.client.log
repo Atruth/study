@@ -1,0 +1,126 @@
+2013-04-19 08:38:51,248 INFO  - [Global] Logger is initialized.
+
+2013-04-19 08:38:51,284 INFO  - [domain-ips] [10.232.16.8, 10.232.16.8]
+
+2013-04-19 08:38:51,284 INFO  - [cache-ips] []
+
+2013-04-19 08:38:51,284 INFO  - ########## environment ok.
+
+2013-04-19 08:38:51,611 INFO  - [init-subscriber] no init data file. Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1)
+
+2013-04-19 08:38:51,612 INFO  - [Global] Deliverer thread is starting...
+
+2013-04-19 08:38:51,620 INFO  - [Global] Connecting to servers...
+
+2013-04-19 08:38:51,621 INFO  - [init-subscriber] no init data file. Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1)
+
+2013-04-19 08:38:51,623 INFO  - [Global] Connecting to commonconfig.config-host.taobao.com:9600...
+
+2013-04-19 08:38:51,819 INFO  - [Global] Successfully connected to server: commonconfig.config-host.taobao.com:9600
+
+2013-04-19 08:38:51,855 INFO  - [Reg] Registration of Rollbackable Cacheable Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1) is accepted.
+
+2013-04-19 08:38:51,860 INFO  - [Reg] Registration of Rollbackable Cacheable Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1) is accepted.
+
+2013-04-19 08:38:52,851 INFO  - [Data] Received. (ID: NS_Pub_Servers_TOPIC-JU-ZX-TEST, Revision: 1, Empty)
+
+2013-04-19 08:38:52,851 INFO  - ########## [snapshot-save] do not save on windows. NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP
+
+2013-04-19 08:38:52,851 INFO  - ########## [subscriber-update] Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1), revision=1, count=0
+
+2013-04-19 08:38:52,852 INFO  - [Notifier] Notifier thread is starting...
+
+2013-04-19 08:38:52,852 INFO  - [Notifier] Notify Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1)
+
+2013-04-19 08:38:53,388 INFO  - [Data] Received. (ID: com.taobao.config.serverlist, Revision: 3, Count: 2, String[0]: remoting://10.232.16.8:9600?priority=0)
+
+2013-04-19 08:38:53,388 INFO  - ########## [snapshot-save] do not save on windows. com.taobao.config.serverlist, DEFAULT_GROUP
+
+2013-04-19 08:38:53,388 INFO  - ########## [subscriber-update] Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1), revision=3, count=2
+
+2013-04-19 08:38:53,388 INFO  - [Notifier] Notify Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1)
+
+2013-04-19 08:39:11,919 INFO  - [Global] Logger is initialized.
+
+2013-04-19 08:39:11,945 INFO  - [domain-ips] [10.232.16.8, 10.232.16.8]
+
+2013-04-19 08:39:11,945 INFO  - [cache-ips] []
+
+2013-04-19 08:39:11,945 INFO  - ########## environment ok.
+
+2013-04-19 08:39:12,164 INFO  - [init-subscriber] no init data file. Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1)
+
+2013-04-19 08:39:12,165 INFO  - [Global] Deliverer thread is starting...
+
+2013-04-19 08:39:12,172 INFO  - [Global] Connecting to servers...
+
+2013-04-19 08:39:12,173 INFO  - [init-subscriber] no init data file. Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1)
+
+2013-04-19 08:39:12,175 INFO  - [Global] Connecting to commonconfig.config-host.taobao.com:9600...
+
+2013-04-19 08:39:12,288 INFO  - [Global] Successfully connected to server: commonconfig.config-host.taobao.com:9600
+
+2013-04-19 08:39:12,312 INFO  - [Reg] Registration of Rollbackable Cacheable Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1) is accepted.
+
+2013-04-19 08:39:12,317 INFO  - [Reg] Registration of Rollbackable Cacheable Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1) is accepted.
+
+2013-04-19 08:39:13,355 INFO  - [Data] Received. (ID: com.taobao.config.serverlist, Revision: 3, Count: 2, String[0]: remoting://10.232.16.8:9600?priority=0)
+
+2013-04-19 08:39:13,355 INFO  - ########## [snapshot-save] do not save on windows. com.taobao.config.serverlist, DEFAULT_GROUP
+
+2013-04-19 08:39:13,355 INFO  - ########## [subscriber-update] Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1), revision=3, count=2
+
+2013-04-19 08:39:13,356 INFO  - [Notifier] Notifier thread is starting...
+
+2013-04-19 08:39:13,356 INFO  - [Notifier] Notify Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1)
+
+2013-04-19 08:39:13,358 INFO  - [Data] Received. (ID: NS_Pub_Servers_TOPIC-JU-ZX-TEST, Revision: 1, Empty)
+
+2013-04-19 08:39:13,358 INFO  - ########## [snapshot-save] do not save on windows. NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP
+
+2013-04-19 08:39:13,358 INFO  - ########## [subscriber-update] Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1), revision=1, count=0
+
+2013-04-19 08:39:13,358 INFO  - [Notifier] Notify Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1)
+
+2013-04-19 08:41:19,015 INFO  - [Global] Logger is initialized.
+
+2013-04-19 08:41:19,041 INFO  - [domain-ips] [10.232.16.8, 10.232.16.8]
+
+2013-04-19 08:41:19,041 INFO  - [cache-ips] []
+
+2013-04-19 08:41:19,041 INFO  - ########## environment ok.
+
+2013-04-19 08:41:19,258 INFO  - [init-subscriber] no init data file. Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1)
+
+2013-04-19 08:41:19,260 INFO  - [Global] Deliverer thread is starting...
+
+2013-04-19 08:41:19,267 INFO  - [Global] Connecting to servers...
+
+2013-04-19 08:41:19,268 INFO  - [init-subscriber] no init data file. Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1)
+
+2013-04-19 08:41:19,269 INFO  - [Global] Connecting to commonconfig.taobao.net:9600...
+
+2013-04-19 08:41:19,385 INFO  - [Global] Successfully connected to server: commonconfig.taobao.net:9600
+
+2013-04-19 08:41:19,408 INFO  - [Reg] Registration of Rollbackable Cacheable Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1) is accepted.
+
+2013-04-19 08:41:19,416 INFO  - [Reg] Registration of Rollbackable Cacheable Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1) is accepted.
+
+2013-04-19 08:41:20,506 INFO  - [Data] Received. (ID: com.taobao.config.serverlist, Revision: 3, Count: 2, String[0]: remoting://10.232.16.8:9600?priority=0)
+
+2013-04-19 08:41:20,506 INFO  - ########## [snapshot-save] do not save on windows. com.taobao.config.serverlist, DEFAULT_GROUP
+
+2013-04-19 08:41:20,506 INFO  - ########## [subscriber-update] Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1), revision=3, count=2
+
+2013-04-19 08:41:20,507 INFO  - [Notifier] Notifier thread is starting...
+
+2013-04-19 08:41:20,507 INFO  - [Notifier] Notify Subscriber (com.taobao.config.serverlist, DEFAULT_GROUP, com.taobao.config.client.ServerListSynchronizer.1)
+
+2013-04-19 08:41:20,509 INFO  - [Data] Received. (ID: NS_Pub_Servers_TOPIC-JU-ZX-TEST, Revision: 1, Empty)
+
+2013-04-19 08:41:20,509 INFO  - ########## [snapshot-save] do not save on windows. NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP
+
+2013-04-19 08:41:20,509 INFO  - ########## [subscriber-update] Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1), revision=1, count=0
+
+2013-04-19 08:41:20,509 INFO  - [Notifier] Notify Subscriber (NS_Pub_Servers_TOPIC-JU-ZX-TEST, DEFAULT_GROUP, NETWORK.SERVICE.1)
+

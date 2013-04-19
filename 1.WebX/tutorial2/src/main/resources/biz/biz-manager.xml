@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+
+	<bean id="simpleManager" class="com.alibaba.biz.manager.impl.SimpleManagerImpl" />
+	<bean id="notifyManager" class="com.taobao.hsf.notify.client.NotifyManagerBean"
+		init-method="init">
+		<property name="publishTopics"> <!-- 配置所需发布的topics -->
+			<list>
+				<value>TOPIC-JU-ZX-TEST</value>
+			</list>
+		</property>
+		<property name="subscribeMessages">
+			<map>
+				<entry key="Topic-01">  <!-- topic -->
+					<map>
+						<entry key="messageType-01">  <!-- messageType -->
+							<bean class="com.taobao.hsf.notify.client.SubscriptMsgDetailInfo">
+								<property name="persistence" value="true" />
+								<property name="waterMark" value="-1" />
+							</bean>
+						</entry>
+					</map>
+				</entry>
+			</map>
+		</property>
+		<property name="groupId" value="PS-JU-ZHOUXIANG-TEST" /> <!-- 发送方的GroupId -->
+		<property name="name" value="notifyTest" /> <!-- 应用名 -->
+		<property name="description" value="notifyTest" /> <!-- 描述 -->
+	</bean>
+
+	<bean id="notifySender" class="com.alibaba.biz.notify.NotifySender">
+		<property name="notifyManager" ref="notifyManager" />
+	</bean>
+</beans>

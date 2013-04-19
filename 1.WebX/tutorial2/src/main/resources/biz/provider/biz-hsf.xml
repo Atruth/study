@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+
+	<bean id="helloWorldServiceImpl" class="com.alibaba.biz.provider.impl.HelloWorldServiceImpl" />
+
+	<bean class="com.taobao.hsf.app.spring.util.HSFSpringProviderBean"
+		init-method="init">
+		<property name="serviceInterface" value="com.alibaba.biz.provider.HelloWorldService" />
+		<property name="target" ref="helloWorldServiceImpl" />
+		<property name="serviceVersion" value="1.0.0.dev" />
+		<property name="serializeType" value="java" />
+	</bean>
+
+	<bean id="helloWorldServiceConsume" class="com.taobao.hsf.app.spring.util.HSFSpringConsumerBean"
+		init-method="init">
+		<property name="interfaceName" value="com.alibaba.biz.provider.HelloWorldService" />
+		<property name="version" value="1.0.0.dev" />
+	</bean>
+
+</beans>
